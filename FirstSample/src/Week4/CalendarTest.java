@@ -7,6 +7,7 @@ public class CalendarTest {
 		LocalDate date = LocalDate.now();
 		int month = date.getMonthValue();
 		int today = date.getDayOfMonth();
+		System.out.println(today);
 		
 		date = date.minusDays(today - 1); // Set to start of month
 		DayOfWeek weekday = date.getDayOfWeek();
